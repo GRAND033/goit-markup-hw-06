@@ -349,14 +349,14 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    outline: none;
+    transition: border 250ms var(--transition-cubic);
 }
 
 .modal-text:focus {
-    border-color: 1px solid #2196F3;
+    border: 1px solid #2196F3;
 }
-.modal-text:focus {
-    color: #2196F3;
-}
+
 
 
 
@@ -1013,6 +1013,7 @@ img {
    
     display: inline-block;
     margin-bottom: 20px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -1021,15 +1022,12 @@ img {
     color: #FFFFFF;
 }
 
-.form-mail {
-    
-}
 
 .input-mail {
-    
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+    margin-right: 12px;
     font-size: 16px;
     line-height: 1.25;
     display: flex;
@@ -1041,10 +1039,30 @@ img {
     border-radius: 4px;
     background: #2F303A;
     color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    transition: border-color 250ms var(--transition-cubic);
+}
+
+.input-mail::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.input-mail:focus {
+    border-color: #2196F3;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-left: 93px;
+    
 }
 
 .foot-button {
-    position: absolute;
+    
+    cursor: pointer;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -1060,8 +1078,13 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
-    
+
     color: #FFFFFF;
+    transition: background-color 250ms var(--transition-cubic);
+}
+
+.foot-button:hover {
+    background-color:#2196F3
 }
 
 .foot-button-icon {
