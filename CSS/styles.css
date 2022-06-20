@@ -1003,17 +1003,17 @@ img {
     background-color: #2196F3;
 }
 
+/* ------------------------------Foot-subscribe------------------------------ */
+
 .foot-subscribe {
-    position: relative;
     display: block;
     margin-right: auto;
 }
 
 .subscribe-title {
-   
     display: inline-block;
     margin-bottom: 20px;
-    
+    margin-left: 93px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -1046,7 +1046,6 @@ img {
 .input-mail::placeholder {
     font-size: 16px;
     line-height: 1.25;
-    
     color: rgba(255, 255, 255, 0.6)
 }
 
@@ -1057,11 +1056,9 @@ img {
 .subscribe-form {
     display: flex;
     margin-left: 93px;
-    
 }
 
 .foot-button {
-    
     cursor: pointer;
     width: 200px;
     height: 50px;
