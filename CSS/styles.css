@@ -260,7 +260,7 @@ img {
     position: absolute;
     min-width: 528px;
     min-height: 581px;
-    padding: 40px 39px 40px 41px;
+    padding: 40px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.9);
@@ -365,20 +365,26 @@ img {
     margin-left: 4px;
 }
 
+.covenant-title {
+    display: flex;
+    justify-content: center;
+}
+
 .covenant-title span {
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-    margin-right: 5px;
+    margin-right: 7px;
     display: flex;
     align-items: center;
-    justify-content: center;
     transition: background-color 250ms var(--transition-cubic);
 }
 
 
+
 .check-icon {
+   
     fill: transparent;
     
 }
@@ -414,7 +420,7 @@ img {
 
 .covenant-title {
     display: flex;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     align-items: center;
     
     font-size: 14px;
@@ -709,8 +715,12 @@ img {
     display: flex;
 }
 
-.list-item {
+.list-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.list-item {
+    /* margin-right: 30px; */
     width: 170px;
     height: 92px;
 }
@@ -1007,13 +1017,12 @@ img {
 
 .foot-subscribe {
     display: block;
-    margin-right: auto;
+    margin-left: auto;
 }
 
 .subscribe-title {
     display: inline-block;
     margin-bottom: 20px;
-    margin-left: 93px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -1055,7 +1064,6 @@ img {
 
 .subscribe-form {
     display: flex;
-    margin-left: 93px;
 }
 
 .foot-button {
